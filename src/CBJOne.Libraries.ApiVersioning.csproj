@@ -6,7 +6,7 @@
     <PackageId>CBJOne.Libraries.ApiVersioning</PackageId>
     <Authors>Carlos Benício</Authors>
     <Company>CBJOne</Company>
-    <PackageVersion>$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;))/PackageVersion>
+    <Version>$(Version)</Version>
 
   </PropertyGroup>
 
