@@ -6,7 +6,6 @@
     <PackageId>CBJOne.Libraries.ApiVersioning</PackageId>
     <Authors>Carlos Benício</Authors>
     <Company>CBJOne</Company>
-    <Version>$(Version)</Version>
   </PropertyGroup>
 
   <PropertyGroup>
