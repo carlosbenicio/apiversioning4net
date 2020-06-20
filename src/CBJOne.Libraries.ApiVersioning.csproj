@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>CBJOne.Libraries.ApiVersioning</PackageId>
     <Authors>Carlos Benício</Authors>
     <Company>CBJOne</Company>
