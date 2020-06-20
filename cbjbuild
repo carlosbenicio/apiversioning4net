@@ -1,0 +1,14 @@
+version: 1.0
+appname: apiversioning
+steps:
+  - step: Checkout
+    command: ''
+  - step: Dependencies restore
+    command:  dotnet restore ApiVersioning.sln
+  - step: Build
+    command:  dotnet build  ApiVersioning.sln
+  - step: 'Pack'
+    command: dotnet pack /p:PackageVersion=$"{BUILD_NUMBER}"
+  - step: 'Publish'
+    command: dotnet nuget CBJOne.Libraries.ApiVersioning.$"{BUILD_NUMBER}.nupkg -k oy2cq3j45brikznzdpjqgri3cmiidtlefjxjil2kww6jsi -s https://api.nuget.org/v3/index.json
+  
