@@ -7,8 +7,12 @@
     <Authors>Carlos Benício</Authors>
     <Company>CBJOne</Company>
     <Version>$(Version)</Version>
-
   </PropertyGroup>
+
+  <PropertyGroup>
+  <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+  <Deterministic>False</Deterministic>
+</PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netcoreapp3.1\CBJOne.Libraries.ApiVersioning.xml</DocumentationFile>
