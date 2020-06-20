@@ -10,5 +10,5 @@ steps:
   - step: 'Pack'
     command: dotnet pack /p:PackageVersion=$"{BUILD_NUMBER}"
   - step: 'Publish'
-    command: dotnet nuget src/bin/debug/CBJOne.Libraries.ApiVersioning.$"{BUILD_NUMBER}.nupkg -k oy2cq3j45brikznzdpjqgri3cmiidtlefjxjil2kww6jsi -s https://api.nuget.org/v3/index.json
+    command: dotnet nuget src/bin/debug/CBJOne.Libraries.ApiVersioning.$"{BUILD_NUMBER}".nupkg -k oy2cq3j45brikznzdpjqgri3cmiidtlefjxjil2kww6jsi -s https://api.nuget.org/v3/index.json
   
