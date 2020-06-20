@@ -9,5 +9,5 @@ steps:
   - step: Build
     command:  dotnet build  ApiVersioning.sln
   - step: 'Pack'
-    command: "dotnet pack /p:PackageVersion=${tag}" -c Release
+    command: "dotnet pack /p:PackageVersion=${tag} -c Release"
   
