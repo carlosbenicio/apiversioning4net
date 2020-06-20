@@ -1,5 +1,6 @@
 version: 1.0
 appname: apiversioning
+packageId: CBJOne.Libraries.ApiVersioning
 steps:
   - step: Checkout
     command: ''
@@ -9,6 +10,4 @@ steps:
     command:  dotnet build  ApiVersioning.sln
   - step: 'Pack'
     command: "dotnet pack /p:PackageVersion=${tag}"
-  - step: 'Publish'
-    command: "dotnet nuget push /src/bin/Debug/CBJOne.Libraries.ApiVersioning.${tag}.nupkg -k oy2cq3j45brikznzdpjqgri3cmiidtlefjxjil2kww6jsi -s https://api.nuget.org/v3/index.json"
   
