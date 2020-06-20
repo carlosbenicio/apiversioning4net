@@ -8,7 +8,9 @@
     <Company>CBJOne</Company>
 
   </PropertyGroup>
-
+<Target Name="NugetPackAutoVersioning" AfterTargets="Build">
+    <Exec Command="dotnet pack -p:PackageVersion=$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;)) --no-build --configuration $(Configuration) --output &quot;$(SolutionDir)nuget" />
+</Target>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netcoreapp3.1\CBJOne.Libraries.ApiVersioning.xml</DocumentationFile>
   </PropertyGroup>

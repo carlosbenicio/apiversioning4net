@@ -8,6 +8,5 @@ steps:
     command:  dotnet restore ApiVersioning.sln
   - step: Build
     command:  dotnet build  ApiVersioning.sln
-  - step: 'Pack'
-    command: "dotnet pack  -c Release"
+  
   
