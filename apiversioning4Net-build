@@ -1,5 +1,6 @@
 version: 1.0
 appname: apiversioning
+packageversion: 1.0.0
 packageId: CBJOne.Libraries.ApiVersioning
 steps:
   - step: Checkout
@@ -9,5 +10,5 @@ steps:
   - step: Build
     command:  dotnet build  ApiVersioning.sln
   - step: 'Pack'
-    command: "dotnet pack -c Release /p:Version=${tag}"
+    command: "dotnet pack -c Release /p:Version=1.0.0"
   
