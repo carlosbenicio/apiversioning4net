@@ -3,7 +3,7 @@
     using System;
     using Microsoft.AspNetCore.Builder;
 
-    public static class MiddlewareExtensions
+    public static class Middleware
     {
         /// <summary>
         /// Enabling Swagger UI.

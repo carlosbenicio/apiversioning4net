@@ -1,4 +1,4 @@
-﻿namespace CBJOne.Libraries.ApiVersioning
+﻿namespace CBJOne.Libraries.ApiVersioning.Filters
 {
     using System;
     using System.Collections.Generic;

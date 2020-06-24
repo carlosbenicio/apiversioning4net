@@ -8,7 +8,10 @@
     using Microsoft.Extensions.Options;
     using Microsoft.OpenApi.Models;
 
+    using CBJOne.Libraries.ApiVersioning.Filters;
+    using CBJOne.Libraries.ApiVersioning.Defaults;
     using Swashbuckle.AspNetCore.SwaggerGen;
+
 
     public sealed class ConfigureSwaggerGenOptions : IConfigureOptions<SwaggerGenOptions>
     {
@@ -34,7 +37,7 @@
         public void Configure(SwaggerGenOptions options)
         {
             options.DocumentFilter<YamlDocumentFilter>();
-            options.OperationFilter<SwaggerDefaultValues>();
+            options.OperationFilter<DefaultValues>();
 
             if (settings.OAuthEnabled) 
             {
