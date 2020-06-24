@@ -2,14 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>CBJOne.Libraries.ApiVersioning</PackageId>
     <Authors>Carlos Benício</Authors>
     <Company>CBJOne</Company>
-
+    <Description>This library allows you to add versioning and auto document your api. For more information, go to https://github.com/carlosbenicio/apiversioning4net</Description>
   </PropertyGroup>
 
+  <PropertyGroup>
+  <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+  <Deterministic>False</Deterministic>
+</PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\netcoreapp3.1\CBJOne.Libraries.ApiVersioning.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netcoreapp3.1\CBJOne.Libraries.ApiVersioning.xml</DocumentationFile>
   </PropertyGroup>
 

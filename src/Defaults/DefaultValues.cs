@@ -1,4 +1,4 @@
-﻿namespace CBJOne.Libraries.ApiVersioning
+﻿namespace CBJOne.Libraries.ApiVersioning.Defaults
 {
     using System.Diagnostics;
     using System.Linq;
@@ -10,7 +10,7 @@
     /// </summary>
     /// <remarks>This <see cref="IOperationFilter"/> is only required due to bugs in the <see cref="SwaggerGenerator"/>.
     /// Once they are fixed and published, this class can be removed.</remarks>
-    public sealed class SwaggerDefaultValues : IOperationFilter
+    public sealed class DefaultValues : IOperationFilter
     {
         /// <summary>
         /// Applies the filter to the specified operation using the given context.
@@ -31,20 +31,11 @@
                 var routeInfo = description.RouteInfo;
 
                 if (parameter.Description == null)
-                {
                     parameter.Description = description.ModelMetadata?.Description;
-                }
 
                 if (routeInfo == null)
-                {
                     continue;
-                }
-
-                /*if (parameter.d == null)
-                {
-                    parameter.Default = routeInfo.DefaultValue;
-                }*/
-
+                
                 parameter.Required |= !routeInfo.IsOptional;
             }
         }

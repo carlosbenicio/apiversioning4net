@@ -1,4 +1,4 @@
-﻿namespace CBJOne.Libraries.ApiVersioning
+﻿namespace CBJOne.Libraries.ApiVersioning.Extensions
 {
     using CBJOne.Libraries.ApiVersioning.Config;
     using Microsoft.AspNetCore.Mvc;

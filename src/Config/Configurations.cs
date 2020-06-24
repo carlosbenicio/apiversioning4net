@@ -1,7 +1,8 @@
-﻿namespace CBJOne.Libraries.ApiVersioning
+﻿namespace CBJOne.Libraries.ApiVersioning.Configs
 {
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using CBJOne.Libraries.ApiVersioning.Extensions;
 
     public static class SwaggerConfigurations
     {

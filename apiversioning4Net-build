@@ -1,0 +1,14 @@
+version: 1.0
+appname: apiversioning
+packageversion: 1.0.${BUILD_NUMBER}
+packageId: CBJOne.Libraries.ApiVersioning
+steps:
+  - step: Checkout
+    command: ''
+  - step: Dependencies restore
+    command:  dotnet restore ApiVersioning.sln
+  - step: Build
+    command:  dotnet build  ApiVersioning.sln
+  - step: 'Pack'
+    command: "dotnet pack -c Release /p:Version=1.0.${BUILD_NUMBER}"
+  
