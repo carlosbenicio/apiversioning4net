@@ -13,7 +13,7 @@ ApiVersioning4Net is a Swashbuckle extenstions that provides a simple way to ver
       "Description": "Swagger with API version, <a href='/swagger.yaml'>download swagger.yaml</a>",
       "Contact": {
         "Name": "any name",
-        "Email": "maintainer@farfetch.com"
+        "Email": "eyouremail"
       },
       "License": {
         "Name": "Name",
