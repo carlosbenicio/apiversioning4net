@@ -10,7 +10,8 @@
    <PropertyGroup Condition="'$(Configuration)|$(Platform)' ==  'Release|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netcoreapp3.1\ApiVersioning.Example.API.xml</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="CBJOne.Libraries.ApiVersioning" Version="1.0.50" />
-  </ItemGroup>
+   <ItemGroup>
+     <PackageReference Include="CBJOne.Libraries.ApiVersioning" Version="1.0.51" />
+   </ItemGroup>
+ 
 </Project>

@@ -36,5 +36,18 @@ namespace ApiVersioning.Example.API.Controllers
             })
             .ToArray();
         }
+        [ApiVersion("2.0")]
+        [HttpGet]
+        public IEnumerable<WeatherForecast> GetV2()
+        {
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
     }
 }

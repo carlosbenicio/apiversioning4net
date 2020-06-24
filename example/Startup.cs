@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.IO;
 using CBJOne.Libraries.ApiVersioning;
+using CBJOne.Libraries.ApiVersioning.Configs;
+using CBJOne.Libraries.ApiVersioning.Extensions;
 using System.Reflection;
 
 namespace ApiVersioning.Example.API
